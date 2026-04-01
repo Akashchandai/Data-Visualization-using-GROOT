@@ -1,67 +1,129 @@
-# twig
-
-twig is the reincarnation of groot and is the project that is actively maintained. Please visit the 
-[twig repository](https://github.com/gavalian/twig) to get the package.
-
 # Data Visualization and Analysis Software
 
 Powerfull data analysis and visualization tool writte in pure Java. Can be included in the application.
 Twig library is evolution of groot, which was initially developped for small data visualization while developing data reconstruction codes,
 and since became very improtant part of CLAS12 online and offline software.This project is actively developped.
 
-# Visualization
+# 📊 Java Data Visualization using GROOT
 
+A **Java-based data visualization project** built using the **GROOT scientific plotting library**.
+This project demonstrates how to generate **histograms, graphs, and data plots** using Java.
+
+It is designed as a **learning project for data visualization and scientific plotting in Java**.
+
+---
+
+# Features
+
+* Histogram visualization
+* Graph plotting (X-Y plots)
+* Random data simulation
+* Interactive canvas window
+* Scientific data visualization
+* Built using Maven and Java
+
+---
+
+# Tech Stack
+
+* **Java**
+* **Maven**
+* **GROOT Visualization Library**
+* **VS Code**
+* **Git & GitHub**
+
+---
+
+# 📂 Project Structure
+
+```
+groot-project
+│
+├── src
+│   └── main
+│       └── java
+│           └── App.java
+│
+├── tutorials
+│   └── demo examples
+│
+├── images
+│   └── screenshots
+│
+├── pom.xml
+└── README.md
+```
+
+---
 <img src="https://github.com/gavalian/twig/blob/main/tutorials/images/twig-demo-0.0.4.png" width="900">
+#Installation
 
-Examples produced by [twig repository](https://github.com/gavalian/twig)
+### 1️ Clone the Repository
 
-# Usage
-
-Include twig project in your pom using:
-
-```html
- <!-- github repository for TWIG Library -->
- <repositories>
-    <repository>
-      <id>twig-github</id>
-      <url>https://maven.pkg.github.com/gavalian/twig</url>
-    </repository>
- </repositories>
-<!-- TWIG Library (Java Data Visualization and Analysis) -->
-<dependency>
-  <groupId>j4np</groupId>
-  <artifactId>twig</artifactId>
-  <version>0.0.4</version>
-</dependency>
+```bash
+git clone https://github.com/your-username/java-data-visualization-groot.git
 ```
 
-Check out the distribution site for newer versions: (click on "Packages" on the right menu bar)
+### 2️ Navigate to the Project
 
-# Tutorials
-
-The tutorials for some of the graph types can be found in directory tutorials/plotting, and direcotry 
-tutorials/io containds examples of data IO., such as saving histograms and reading and plotting, also 
-reading data from CSV and Text files and plotting graphs.
-
-To run tutorials compile the library:
-
-```
-prompt> git clone https://github.com/gavalian/twig.git
-prompt> mvn install
+```bash
+cd java-data-visualization-groot
 ```
 
-then run command (depnding what version you got)
+### 3️ Build the Project
+
+```bash
+mvn clean install
+```
+
+---
+
+# Run the Project
+
+Run the Java program:
+
+```bash
+mvn exec:java
+```
+
+Or run directly from **VS Code** by opening:
 
 ```
-prompt> jshell jshell --class-path target/twig-0.0.4-core.jar --startup etc/imports.jshell tutorials/plotting/advanced_bar_chart.java
+src/main/java/App.java
 ```
-the example scripts are writte to run in JSHELL, if you'd like to include them in your Java program, you must add the imports found in
-etc/imports.jshell file.
-If you'd like a specific example of your favorite graph type, please, submit an issue and I will create the desired example.
+
+Click **Run ▶**.
+
+---
+
+# 📊 Example Code
+
+```java
+import org.jlab.groot.data.H1F;
+import org.jlab.groot.ui.TCanvas;
+
+public class App {
+
+    public static void main(String[] args) {
+
+        H1F histogram = new H1F("Histogram",100,-5,5);
+
+        for(int i=0;i<10000;i++){
+            histogram.fill(Math.random());
+        }
+
+        TCanvas canvas = new TCanvas("Canvas",800,600);
+        canvas.draw(histogram);
+    }
+}
+```
+
+This program generates a **histogram visualization window**.
+
+---
 
 # Gallery
 
-Gallery from [twig repository](https://github.com/gavalian/twig)
 
 <table class="center" width="100%">
     <tr>
@@ -94,16 +156,38 @@ Gallery from [twig repository](https://github.com/gavalian/twig)
     </tr>
 </table>
 
+---
 
-# Example of creating tuple from text file (Appendix)
+# Learning Purpose
 
-We start from file that constains events each presented in two lines
+This project helps developers understand:
 
-```
-awk '{print $2,$5,$6,$7}' extractedDataPred2.txt > epip_hb.txt
-```
+* Java-based data visualization
+* Scientific plotting
+* Histogram and graph generation
+* Using external libraries with Maven
 
-this command takes two lines from the input and joins them into one line
+---
+
+# Future Improvements
+
+* CSV dataset visualization
+* Multiple graph dashboards
+* Interactive UI
+* Data analytics integration
+
+---
+
+# Author
+
+**Akash Chandai**
+
+* GitHub: https://github.com/Akashchandai
+* LinkedIn: https://linkedin.com/in/akash-chandai
+
+---
+
+⭐ If you like this project, consider giving it a **star on GitHub**!
 
 ```
 paste - - < epip_hb.txt > epip_hb_joined.txt
