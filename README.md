@@ -51,7 +51,7 @@ groot-project
 ```
 
 ---
-<img src="images/twig image.png>
+<img src="https://github.com/Akashchandai/Data-Visualization-using-GROOT/blob/dd27476418115a2a0e9c83a3c0c7e66f7df4eb5b/images/twig%20image.png">
 #Installation
 
 ### 1️ Clone the Repository
