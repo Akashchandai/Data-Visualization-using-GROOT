@@ -4,10 +4,6 @@ Powerfull data analysis and visualization tool writte in pure Java. Can be inclu
 Twig library is evolution of groot, which was initially developped for small data visualization while developing data reconstruction codes,
 and since became very improtant part of CLAS12 online and offline software.This project is actively developped.
 
-# 📊 Java Data Visualization using GROOT
-
-A **Java-based data visualization project** built using the **GROOT scientific plotting library**.
-This project demonstrates how to generate **histograms, graphs, and data plots** using Java.
 
 It is designed as a **learning project for data visualization and scientific plotting in Java**.
 
@@ -55,7 +51,7 @@ groot-project
 ```
 
 ---
-<img src="https://github.com/gavalian/twig/blob/main/tutorials/images/twig-demo-0.0.4.png" width="900">
+<img src="images/twig image.png>
 #Installation
 
 ### 1️ Clone the Repository
