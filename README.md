@@ -54,44 +54,6 @@ groot-project
 <img src="https://github.com/Akashchandai/Data-Visualization-using-GROOT/blob/dd27476418115a2a0e9c83a3c0c7e66f7df4eb5b/images/twig%20image.png">
 #Installation
 
-### 1️ Clone the Repository
-
-```bash
-git clone https://github.com/your-username/java-data-visualization-groot.git
-```
-
-### 2️ Navigate to the Project
-
-```bash
-cd java-data-visualization-groot
-```
-
-### 3️ Build the Project
-
-```bash
-mvn clean install
-```
-
----
-
-# Run the Project
-
-Run the Java program:
-
-```bash
-mvn exec:java
-```
-
-Or run directly from **VS Code** by opening:
-
-```
-src/main/java/App.java
-```
-
-Click **Run ▶**.
-
----
-
 # 📊 Example Code
 
 ```java
